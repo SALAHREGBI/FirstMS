@@ -1,0 +1,3 @@
+com\jobintech\SpringMS\SpringMsApplication.class
+com\jobintech\SpringMS\model\Personne.class
+com\jobintech\SpringMS\repositories\PersonneRepository.class
