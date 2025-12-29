@@ -1,5 +1,6 @@
 package com.jobintech.SpringMS;
 
+import com.jobintech.SpringMS.model.Personne;
 import com.jobintech.SpringMS.repositories.PersonneRepository;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -15,11 +16,11 @@ public class SpringMsApplication {
 
     @Bean
     ApplicationRunner Start(PersonneRepository personneRepository) {
-        return  args -> {
-            personneRepository.save(new com.jobintech.SpringMS.model.Personne("Lina", "douiri"));
-            personneRepository.save(new com.jobintech.SpringMS.model.Personne("Farah", "douiri"));
-            personneRepository.save(new com.jobintech.SpringMS.model.Personne("salah", "regbi"));
-            personneRepository.save(new com.jobintech.SpringMS.model.Personne("simo", "alaoui"));
+        return args -> {
+            personneRepository.save(new Personne(null, "Lina", "douiri"));
+            personneRepository.save(new Personne(null, "Farah", "douiri"));
+            personneRepository.save(new Personne(null, "salah", "regbi"));
+
         };
     }
 }

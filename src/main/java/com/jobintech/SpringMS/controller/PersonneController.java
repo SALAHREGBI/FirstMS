@@ -1,49 +1,46 @@
 package com.jobintech.SpringMS.controller;
 
 import com.jobintech.SpringMS.model.Personne;
-import com.jobintech.SpringMS.repositories.PersonneRepository;
 import com.jobintech.SpringMS.services.PersonneService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
-@Controller
-@AllArgsConstructor
 @RestController
+@RequestMapping("/Personnes")
+@AllArgsConstructor
+@Slf4j
 public class PersonneController {
-    private PersonneRepository personneRepository;
-    private PersonneService PersonneService;
-    @GetMapping("/Personnes" )
+
+    private final PersonneService personneService;
+
+    @GetMapping
     public List<Personne> listePersonnes() {
-        return PersonneService.findAll();
+        return personneService.findAll();
     }
 
-
-    @GetMapping("/Personnes/{id}")
-    public ResponseEntity<Personne> findPersonneById( @PathVariable Long id){
-        Optional<Personne> personne = personneRepository.findById(id);
-        if (personne.isPresent()) {
-            return new ResponseEntity<>(PersonneService.findById(id), HttpStatus.OK);
-        } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-        }
+    @GetMapping("/{id}")
+    public ResponseEntity<Personne> findPersonneById(@PathVariable Long id) {
+        Personne personne = personneService.findById(id);
+        return ResponseEntity.ok(personne);
     }
-    @PostMapping("/Personnes")
+
+    @PostMapping
     public ResponseEntity<Personne> savePersonne(@RequestBody Personne personne) {
-        Personne savedPersonne = PersonneService.create(personne);
+        Personne savedPersonne = personneService.create(personne);
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Location", "/Personnes/" + savedPersonne.getId());
+        headers.add("Location", "/ws/Personnes/" + savedPersonne.getId());
         return new ResponseEntity<>(savedPersonne, headers, HttpStatus.CREATED);
     }
-    @DeleteMapping("/Personnes/{id}")
-    public void deletePersonne(@PathVariable Long id){
-        personneRepository.deleteById(id);
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deletePersonne(@PathVariable Long id) {
+        personneService.delete(id);
     }
 }
-
