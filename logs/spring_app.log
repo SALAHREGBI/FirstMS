@@ -963,3 +963,624 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-02-07T12:12:57.612+01:00  INFO 5332 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2026-02-07T12:12:57.628+01:00  INFO 5332 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
 2026-02-07T12:12:57.634+01:00  INFO 5332 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-02-07T12:37:01.550+01:00  INFO 9324 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Starting SpringMsApplication using Java 17.0.17 with PID 9324 (C:\Users\admin\Desktop\registry-service\microservice-personne\target\classes started by admin in C:\Users\admin\Desktop\registry-service\microservice-personne)
+2026-02-07T12:37:01.553+01:00 DEBUG 9324 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-07T12:37:01.555+01:00  INFO 9324 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-02-07T12:37:03.460+01:00  INFO 9324 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07T12:37:03.833+01:00  INFO 9324 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 345 ms. Found 2 JPA repository interfaces.
+2026-02-07T12:37:04.560+01:00  INFO 9324 --- [SpringMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=15c04e07-3848-37b1-85f3-dbcbff20c17f
+2026-02-07T12:37:04.880+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-07T12:37:04.887+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.892+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.919+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.924+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.926+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$612/0x000001a74941f238] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.929+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.942+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.950+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.952+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.955+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.958+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.967+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.980+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.984+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.986+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.989+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:04.991+01:00  WARN 9324 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:37:05.602+01:00  INFO 9324 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-07T12:37:05.633+01:00  INFO 9324 --- [SpringMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-07T12:37:05.633+01:00  INFO 9324 --- [SpringMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-07T12:37:05.837+01:00  INFO 9324 --- [SpringMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring embedded WebApplicationContext
+2026-02-07T12:37:05.839+01:00  INFO 9324 --- [SpringMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4196 ms
+2026-02-07T12:37:06.281+01:00  INFO 9324 --- [SpringMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07T12:37:06.516+01:00  INFO 9324 --- [SpringMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-07T12:37:06.683+01:00  INFO 9324 --- [SpringMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-07T12:37:07.427+01:00  INFO 9324 --- [SpringMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07T12:37:07.469+01:00  INFO 9324 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-07T12:37:07.743+01:00  INFO 9324 --- [SpringMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5529522f
+2026-02-07T12:37:07.745+01:00  INFO 9324 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-07T12:37:07.834+01:00  WARN 9324 --- [SpringMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07T12:37:09.065+01:00  INFO 9324 --- [SpringMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07T12:37:09.130+01:00  INFO 9324 --- [SpringMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:37:09.897+01:00  WARN 9324 --- [SpringMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-07T12:37:10.567+01:00  INFO 9324 --- [SpringMS] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ded31cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47b71556, org.springframework.security.web.context.SecurityContextHolderFilter@3a388769, org.springframework.security.web.header.HeaderWriterFilter@6a3c1b56, org.springframework.web.filter.CorsFilter@6fb2b972, org.springframework.security.web.authentication.logout.LogoutFilter@6b8a9e1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73db1a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@755a4ef5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eff05e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fa3df, org.springframework.security.web.access.ExceptionTranslationFilter@25134e01, org.springframework.security.web.access.intercept.AuthorizationFilter@7e864fa4]
+2026-02-07T12:37:11.502+01:00  INFO 9324 --- [SpringMS] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-07T12:37:11.697+01:00  WARN 9324 --- [SpringMS] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-07T12:37:11.743+01:00  INFO 9324 --- [SpringMS] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-07T12:37:11.893+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-07T12:37:11.900+01:00  INFO 9324 --- [SpringMS] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:37:11.953+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-07T12:37:11.954+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:37:12.815+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:37:12.817+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-07T12:37:12.820+01:00  INFO 9324 --- [SpringMS] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-07T12:37:12.829+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770464232828 with initial instances count: 0
+2026-02-07T12:37:12.833+01:00  INFO 9324 --- [SpringMS] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGMS with eureka with status UP
+2026-02-07T12:37:12.833+01:00  INFO 9324 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464232833, current=UP, previous=STARTING]
+2026-02-07T12:37:12.836+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:37:12.867+01:00  INFO 9324 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/ws'
+2026-02-07T12:37:12.869+01:00  INFO 9324 --- [SpringMS] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-07T12:37:12.986+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:37:13.002+01:00  INFO 9324 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Started SpringMsApplication in 12.522 seconds (process running for 13.361)
+2026-02-07T12:37:13.076+01:00 DEBUG 9324 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:37:42.819+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-07T12:37:42.820+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:37:42.855+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:37:46.424+01:00  INFO 9324 --- [SpringMS] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07T12:37:46.426+01:00  INFO 9324 --- [SpringMS] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-07T12:37:46.428+01:00  INFO 9324 --- [SpringMS] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-07T12:37:46.797+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:37:52.017+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:38:06.930+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:38:12.092+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:38:29.885+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:39:02.999+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:39:03.303+01:00  INFO 9324 --- [SpringMS] [http-nio-8081-exec-3] c.j.SpringMS.services.PersonneService    : Récupération de la liste des personnes
+2026-02-07T12:39:03.316+01:00 DEBUG 9324 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.nom,
+        p1_0.prenom 
+    from
+        personne p1_0
+2026-02-07T12:39:10.210+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGMS with eureka with status DOWN
+2026-02-07T12:39:10.211+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464350211, current=DOWN, previous=UP]
+2026-02-07T12:39:10.211+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:39:10.229+01:00  INFO 9324 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:39:10.235+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:39:10.238+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-07T12:39:10.245+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-07T12:39:10.246+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-02-07T12:39:13.254+01:00  WARN 9324 --- [SpringMS] [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2026-02-07T12:39:13.256+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-02-07T12:39:13.263+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
+2026-02-07T12:39:13.269+01:00  INFO 9324 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-02-07T12:39:16.533+01:00  INFO 9376 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Starting SpringMsApplication using Java 17.0.17 with PID 9376 (C:\Users\admin\Desktop\registry-service\microservice-personne\target\classes started by admin in C:\Users\admin\Desktop\registry-service\microservice-personne)
+2026-02-07T12:39:16.536+01:00 DEBUG 9376 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-07T12:39:16.537+01:00  INFO 9376 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-02-07T12:39:18.187+01:00  INFO 9376 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07T12:39:18.547+01:00  INFO 9376 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 331 ms. Found 2 JPA repository interfaces.
+2026-02-07T12:39:19.147+01:00  INFO 9376 --- [SpringMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=15c04e07-3848-37b1-85f3-dbcbff20c17f
+2026-02-07T12:39:19.565+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-07T12:39:19.568+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.572+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.595+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.604+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.607+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$612/0x000002300b41f238] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.610+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.627+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.637+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.642+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.645+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.648+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.657+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.676+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.679+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.682+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.689+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:19.691+01:00  WARN 9376 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:39:20.450+01:00  INFO 9376 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-07T12:39:20.481+01:00  INFO 9376 --- [SpringMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-07T12:39:20.483+01:00  INFO 9376 --- [SpringMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-07T12:39:20.732+01:00  INFO 9376 --- [SpringMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring embedded WebApplicationContext
+2026-02-07T12:39:20.734+01:00  INFO 9376 --- [SpringMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4115 ms
+2026-02-07T12:39:21.206+01:00  INFO 9376 --- [SpringMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07T12:39:21.510+01:00  INFO 9376 --- [SpringMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-07T12:39:21.663+01:00  INFO 9376 --- [SpringMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-07T12:39:22.534+01:00  INFO 9376 --- [SpringMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07T12:39:22.590+01:00  INFO 9376 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-07T12:39:22.919+01:00  INFO 9376 --- [SpringMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@87aec6a
+2026-02-07T12:39:22.922+01:00  INFO 9376 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-07T12:39:23.008+01:00  WARN 9376 --- [SpringMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07T12:39:24.339+01:00  INFO 9376 --- [SpringMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07T12:39:24.392+01:00  INFO 9376 --- [SpringMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:39:25.051+01:00  WARN 9376 --- [SpringMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-07T12:39:25.998+01:00  INFO 9376 --- [SpringMS] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@174aabb2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33b4c775, org.springframework.security.web.context.SecurityContextHolderFilter@69e23e94, org.springframework.security.web.header.HeaderWriterFilter@52737c1, org.springframework.web.filter.CorsFilter@678b3746, org.springframework.security.web.authentication.logout.LogoutFilter@51d6c42d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@737ae41a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25134e01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12d28106, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45689582, org.springframework.security.web.access.ExceptionTranslationFilter@2b8b5d9e, org.springframework.security.web.access.intercept.AuthorizationFilter@5b5e45bc]
+2026-02-07T12:39:26.869+01:00  INFO 9376 --- [SpringMS] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-07T12:39:27.094+01:00  WARN 9376 --- [SpringMS] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-07T12:39:27.138+01:00  INFO 9376 --- [SpringMS] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-07T12:39:27.261+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-07T12:39:27.272+01:00  INFO 9376 --- [SpringMS] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:39:27.324+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:39:27.324+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:39:27.324+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:39:27.325+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:39:27.325+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:39:27.325+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-07T12:39:27.325+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:39:28.037+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:39:28.042+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-07T12:39:28.046+01:00  INFO 9376 --- [SpringMS] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-07T12:39:28.053+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770464368052 with initial instances count: 1
+2026-02-07T12:39:28.058+01:00  INFO 9376 --- [SpringMS] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGMS with eureka with status UP
+2026-02-07T12:39:28.058+01:00  INFO 9376 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464368058, current=UP, previous=STARTING]
+2026-02-07T12:39:28.061+01:00  INFO 9376 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:39:28.114+01:00  INFO 9376 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/ws'
+2026-02-07T12:39:28.116+01:00  INFO 9376 --- [SpringMS] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-07T12:39:28.147+01:00  INFO 9376 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:39:28.267+01:00  INFO 9376 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Started SpringMsApplication in 12.671 seconds (process running for 13.404)
+2026-02-07T12:39:28.331+01:00 DEBUG 9376 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:39:42.515+01:00  INFO 9376 --- [SpringMS] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07T12:39:42.515+01:00  INFO 9376 --- [SpringMS] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-07T12:39:42.516+01:00  INFO 9376 --- [SpringMS] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-07T12:39:42.870+01:00 DEBUG 9376 --- [SpringMS] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:39:42.883+01:00  WARN 9376 --- [SpringMS] [http-nio-8081-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-02-07T12:39:48.488+01:00 DEBUG 9376 --- [SpringMS] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:39:48.491+01:00  WARN 9376 --- [SpringMS] [http-nio-8081-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-02-07T12:41:13.438+01:00 DEBUG 9376 --- [SpringMS] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:41:13.754+01:00  INFO 9376 --- [SpringMS] [http-nio-8081-exec-8] c.j.SpringMS.services.PersonneService    : Récupération de la liste des personnes
+2026-02-07T12:41:13.767+01:00 DEBUG 9376 --- [SpringMS] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.nom,
+        p1_0.prenom 
+    from
+        personne p1_0
+2026-02-07T12:44:27.339+01:00  INFO 9376 --- [SpringMS] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:44:44.920+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGMS with eureka with status DOWN
+2026-02-07T12:44:44.921+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464684921, current=DOWN, previous=UP]
+2026-02-07T12:44:44.921+01:00  INFO 9376 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:44:44.935+01:00  INFO 9376 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:44:44.942+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:44:44.945+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-07T12:44:44.953+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-07T12:44:44.954+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-02-07T12:44:47.971+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-02-07T12:44:47.990+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
+2026-02-07T12:44:47.995+01:00  INFO 9376 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-02-07T12:44:53.459+01:00  INFO 15512 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Starting SpringMsApplication using Java 17.0.17 with PID 15512 (C:\Users\admin\Desktop\registry-service\microservice-personne\target\classes started by admin in C:\Users\admin\Desktop\registry-service\microservice-personne)
+2026-02-07T12:44:53.462+01:00 DEBUG 15512 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-07T12:44:53.463+01:00  INFO 15512 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-02-07T12:44:54.746+01:00  INFO 15512 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07T12:44:54.971+01:00  INFO 15512 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 209 ms. Found 2 JPA repository interfaces.
+2026-02-07T12:44:55.445+01:00  INFO 15512 --- [SpringMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=15c04e07-3848-37b1-85f3-dbcbff20c17f
+2026-02-07T12:44:55.714+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-07T12:44:55.720+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.724+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.738+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.741+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.743+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$612/0x000001600841f880] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.744+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.754+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.762+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.765+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.766+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.770+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.778+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.793+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.796+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.798+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.801+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:55.805+01:00  WARN 15512 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:44:56.500+01:00  INFO 15512 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-07T12:44:56.525+01:00  INFO 15512 --- [SpringMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-07T12:44:56.526+01:00  INFO 15512 --- [SpringMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-07T12:44:56.690+01:00  INFO 15512 --- [SpringMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring embedded WebApplicationContext
+2026-02-07T12:44:56.690+01:00  INFO 15512 --- [SpringMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3157 ms
+2026-02-07T12:44:57.073+01:00  INFO 15512 --- [SpringMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07T12:44:57.264+01:00  INFO 15512 --- [SpringMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-07T12:44:57.397+01:00  INFO 15512 --- [SpringMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-07T12:44:58.060+01:00  INFO 15512 --- [SpringMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07T12:44:58.090+01:00  INFO 15512 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-07T12:44:58.325+01:00  INFO 15512 --- [SpringMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@538aa83f
+2026-02-07T12:44:58.329+01:00  INFO 15512 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-07T12:44:58.398+01:00  WARN 15512 --- [SpringMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07T12:44:59.451+01:00  INFO 15512 --- [SpringMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07T12:44:59.498+01:00  INFO 15512 --- [SpringMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:45:00.131+01:00  WARN 15512 --- [SpringMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-07T12:45:00.673+01:00  INFO 15512 --- [SpringMS] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e864fa4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@452d6fd, org.springframework.security.web.context.SecurityContextHolderFilter@19877453, org.springframework.security.web.header.HeaderWriterFilter@48e3017a, org.springframework.web.filter.CorsFilter@38dc1c50, org.springframework.security.web.authentication.logout.LogoutFilter@1a865ebf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72fa021, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18174bd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3af6d7a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ccea4be, org.springframework.security.web.access.ExceptionTranslationFilter@5d50e7f6, org.springframework.security.web.access.intercept.AuthorizationFilter@6715a6da]
+2026-02-07T12:45:01.496+01:00  INFO 15512 --- [SpringMS] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-07T12:45:01.704+01:00  WARN 15512 --- [SpringMS] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-07T12:45:01.749+01:00  INFO 15512 --- [SpringMS] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-07T12:45:01.882+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-07T12:45:01.893+01:00  INFO 15512 --- [SpringMS] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-07T12:45:01.941+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:45:02.542+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:45:02.545+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-07T12:45:02.548+01:00  INFO 15512 --- [SpringMS] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-07T12:45:02.555+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770464702554 with initial instances count: 0
+2026-02-07T12:45:02.558+01:00  INFO 15512 --- [SpringMS] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGMS with eureka with status UP
+2026-02-07T12:45:02.560+01:00  INFO 15512 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464702560, current=UP, previous=STARTING]
+2026-02-07T12:45:02.562+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:45:02.595+01:00  INFO 15512 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/ws'
+2026-02-07T12:45:02.597+01:00  INFO 15512 --- [SpringMS] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-07T12:45:02.617+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:45:02.712+01:00  INFO 15512 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Started SpringMsApplication in 10.119 seconds (process running for 10.928)
+2026-02-07T12:45:02.844+01:00 DEBUG 15512 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:45:25.381+01:00  INFO 15512 --- [SpringMS] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07T12:45:25.382+01:00  INFO 15512 --- [SpringMS] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-07T12:45:25.383+01:00  INFO 15512 --- [SpringMS] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-07T12:45:25.707+01:00 DEBUG 15512 --- [SpringMS] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:45:29.107+01:00 DEBUG 15512 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:45:29.190+01:00  INFO 15512 --- [SpringMS] [http-nio-8081-exec-3] c.j.SpringMS.services.PersonneService    : Récupération de la liste des personnes
+2026-02-07T12:45:29.202+01:00 DEBUG 15512 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.nom,
+        p1_0.prenom 
+    from
+        personne p1_0
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:45:32.555+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-07T12:45:32.556+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:45:32.580+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:47:22.135+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGMS with eureka with status DOWN
+2026-02-07T12:47:22.136+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464842136, current=DOWN, previous=UP]
+2026-02-07T12:47:22.137+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:47:22.160+01:00  INFO 15512 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:47:22.164+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:47:22.166+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-07T12:47:22.174+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-07T12:47:22.175+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-02-07T12:47:25.185+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-02-07T12:47:25.204+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
+2026-02-07T12:47:25.208+01:00  INFO 15512 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-02-07T12:47:28.280+01:00  INFO 2908 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Starting SpringMsApplication using Java 17.0.17 with PID 2908 (C:\Users\admin\Desktop\registry-service\microservice-personne\target\classes started by admin in C:\Users\admin\Desktop\registry-service\microservice-personne)
+2026-02-07T12:47:28.283+01:00 DEBUG 2908 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-07T12:47:28.285+01:00  INFO 2908 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-02-07T12:47:29.713+01:00  INFO 2908 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07T12:47:29.930+01:00  INFO 2908 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 2 JPA repository interfaces.
+2026-02-07T12:47:30.454+01:00  INFO 2908 --- [SpringMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=15c04e07-3848-37b1-85f3-dbcbff20c17f
+2026-02-07T12:47:30.725+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-07T12:47:30.728+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.731+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.751+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.764+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.766+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$612/0x000001bcd641e0a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.769+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.778+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.788+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.790+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.791+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.794+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.801+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.812+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.814+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.816+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.820+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:30.822+01:00  WARN 2908 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:47:31.361+01:00  INFO 2908 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-07T12:47:31.388+01:00  INFO 2908 --- [SpringMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-07T12:47:31.389+01:00  INFO 2908 --- [SpringMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-07T12:47:31.523+01:00  INFO 2908 --- [SpringMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring embedded WebApplicationContext
+2026-02-07T12:47:31.524+01:00  INFO 2908 --- [SpringMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3161 ms
+2026-02-07T12:47:31.905+01:00  INFO 2908 --- [SpringMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07T12:47:32.082+01:00  INFO 2908 --- [SpringMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-07T12:47:32.198+01:00  INFO 2908 --- [SpringMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-07T12:47:32.903+01:00  INFO 2908 --- [SpringMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07T12:47:32.937+01:00  INFO 2908 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-07T12:47:33.156+01:00  INFO 2908 --- [SpringMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@336e3be2
+2026-02-07T12:47:33.161+01:00  INFO 2908 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-07T12:47:33.226+01:00  WARN 2908 --- [SpringMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07T12:47:34.210+01:00  INFO 2908 --- [SpringMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07T12:47:34.258+01:00  INFO 2908 --- [SpringMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:47:34.908+01:00  WARN 2908 --- [SpringMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-07T12:47:35.759+01:00  INFO 2908 --- [SpringMS] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73db1a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12a7515b, org.springframework.security.web.context.SecurityContextHolderFilter@6a3c1b56, org.springframework.security.web.header.HeaderWriterFilter@55c78556, org.springframework.web.filter.CorsFilter@2c28654e, org.springframework.security.web.authentication.logout.LogoutFilter@6715a6da, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33b4c775, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ce4eb42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a388769, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ded31cc, org.springframework.security.web.access.ExceptionTranslationFilter@649a6d88, org.springframework.security.web.access.intercept.AuthorizationFilter@72fa021]
+2026-02-07T12:47:36.540+01:00  INFO 2908 --- [SpringMS] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-07T12:47:36.730+01:00  WARN 2908 --- [SpringMS] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-07T12:47:36.771+01:00  INFO 2908 --- [SpringMS] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-07T12:47:36.875+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-07T12:47:36.882+01:00  INFO 2908 --- [SpringMS] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:47:36.938+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:47:36.939+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:47:36.939+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:47:36.940+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:47:36.940+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:47:36.940+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-07T12:47:36.940+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:47:37.603+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:47:37.606+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-07T12:47:37.612+01:00  INFO 2908 --- [SpringMS] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-07T12:47:37.619+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770464857618 with initial instances count: 0
+2026-02-07T12:47:37.622+01:00  INFO 2908 --- [SpringMS] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGMS with eureka with status UP
+2026-02-07T12:47:37.623+01:00  INFO 2908 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770464857623, current=UP, previous=STARTING]
+2026-02-07T12:47:37.625+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:47:37.659+01:00  INFO 2908 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/ws'
+2026-02-07T12:47:37.660+01:00  INFO 2908 --- [SpringMS] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-07T12:47:37.678+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:47:37.789+01:00  INFO 2908 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Started SpringMsApplication in 10.417 seconds (process running for 11.149)
+2026-02-07T12:47:37.915+01:00 DEBUG 2908 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:47:57.795+01:00  INFO 2908 --- [SpringMS] [http-nio-8081-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07T12:47:57.795+01:00  INFO 2908 --- [SpringMS] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-07T12:47:57.796+01:00  INFO 2908 --- [SpringMS] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-07T12:47:58.196+01:00 DEBUG 2908 --- [SpringMS] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:48:02.078+01:00 DEBUG 2908 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.password,
+        d1_0.role,
+        d1_0.username 
+    from
+        dbuser d1_0 
+    where
+        d1_0.username=?
+2026-02-07T12:48:02.171+01:00  INFO 2908 --- [SpringMS] [http-nio-8081-exec-3] c.j.SpringMS.services.PersonneService    : Récupération de la liste des personnes
+2026-02-07T12:48:02.183+01:00 DEBUG 2908 --- [SpringMS] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.nom,
+        p1_0.prenom 
+    from
+        personne p1_0
+2026-02-07T12:48:07.611+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:48:07.611+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:48:07.612+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:48:07.612+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:48:07.612+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:48:07.612+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-07T12:48:07.612+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:48:07.639+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:52:36.958+01:00  INFO 2908 --- [SpringMS] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:53:05.670+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGMS with eureka with status DOWN
+2026-02-07T12:53:05.670+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770465185670, current=DOWN, previous=UP]
+2026-02-07T12:53:05.670+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:53:05.684+01:00  INFO 2908 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:53:05.692+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:53:05.696+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-07T12:53:05.705+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-07T12:53:05.707+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-02-07T12:53:08.711+01:00  WARN 2908 --- [SpringMS] [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2026-02-07T12:53:08.712+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-02-07T12:53:08.716+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
+2026-02-07T12:53:08.720+01:00  INFO 2908 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-02-07T12:53:14.512+01:00  INFO 11236 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Starting SpringMsApplication using Java 17.0.17 with PID 11236 (C:\Users\admin\Desktop\registry-service\microservice-personne\target\classes started by admin in C:\Users\admin\Desktop\registry-service\microservice-personne)
+2026-02-07T12:53:14.514+01:00 DEBUG 11236 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-07T12:53:14.516+01:00  INFO 11236 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-02-07T12:53:15.999+01:00  INFO 11236 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-07T12:53:16.235+01:00  INFO 11236 --- [SpringMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215 ms. Found 2 JPA repository interfaces.
+2026-02-07T12:53:16.779+01:00  INFO 11236 --- [SpringMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=15c04e07-3848-37b1-85f3-dbcbff20c17f
+2026-02-07T12:53:17.047+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-07T12:53:17.051+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.053+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.067+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.071+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.072+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$612/0x000002072041d570] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.075+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.083+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.092+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.094+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.095+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.098+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.104+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.118+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.122+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.124+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.127+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.129+01:00  WARN 11236 --- [SpringMS] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-07T12:53:17.709+01:00  INFO 11236 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-07T12:53:17.735+01:00  INFO 11236 --- [SpringMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-07T12:53:17.736+01:00  INFO 11236 --- [SpringMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-07T12:53:17.882+01:00  INFO 11236 --- [SpringMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/ws]     : Initializing Spring embedded WebApplicationContext
+2026-02-07T12:53:17.882+01:00  INFO 11236 --- [SpringMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3292 ms
+2026-02-07T12:53:18.241+01:00  INFO 11236 --- [SpringMS] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-07T12:53:18.429+01:00  INFO 11236 --- [SpringMS] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-07T12:53:18.583+01:00  INFO 11236 --- [SpringMS] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-07T12:53:19.367+01:00  INFO 11236 --- [SpringMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-07T12:53:19.412+01:00  INFO 11236 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-07T12:53:19.675+01:00  INFO 11236 --- [SpringMS] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@336e3be2
+2026-02-07T12:53:19.678+01:00  INFO 11236 --- [SpringMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-07T12:53:19.745+01:00  WARN 11236 --- [SpringMS] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-07T12:53:20.791+01:00  INFO 11236 --- [SpringMS] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-07T12:53:20.845+01:00  INFO 11236 --- [SpringMS] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:53:21.428+01:00  WARN 11236 --- [SpringMS] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-07T12:53:21.925+01:00  INFO 11236 --- [SpringMS] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73db1a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12a7515b, org.springframework.security.web.context.SecurityContextHolderFilter@6a3c1b56, org.springframework.security.web.header.HeaderWriterFilter@55c78556, org.springframework.web.filter.CorsFilter@2c28654e, org.springframework.security.web.authentication.logout.LogoutFilter@6715a6da, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33b4c775, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ce4eb42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a388769, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ded31cc, org.springframework.security.web.access.ExceptionTranslationFilter@649a6d88, org.springframework.security.web.access.intercept.AuthorizationFilter@72fa021]
+2026-02-07T12:53:22.776+01:00  INFO 11236 --- [SpringMS] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-07T12:53:23.047+01:00  WARN 11236 --- [SpringMS] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-07T12:53:23.108+01:00  INFO 11236 --- [SpringMS] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-07T12:53:23.219+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-07T12:53:23.228+01:00  INFO 11236 --- [SpringMS] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-07T12:53:23.280+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-07T12:53:23.281+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-07T12:53:23.281+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-07T12:53:23.281+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-07T12:53:23.282+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-07T12:53:23.282+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-07T12:53:23.282+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-07T12:53:23.880+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-07T12:53:23.884+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-07T12:53:23.888+01:00  INFO 11236 --- [SpringMS] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-07T12:53:23.894+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770465203893 with initial instances count: 1
+2026-02-07T12:53:23.896+01:00  INFO 11236 --- [SpringMS] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGMS with eureka with status UP
+2026-02-07T12:53:23.898+01:00  INFO 11236 --- [SpringMS] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770465203898, current=UP, previous=STARTING]
+2026-02-07T12:53:23.900+01:00  INFO 11236 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:53:23.932+01:00  INFO 11236 --- [SpringMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/ws'
+2026-02-07T12:53:23.933+01:00  INFO 11236 --- [SpringMS] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-07T12:53:23.961+01:00  INFO 11236 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:53:24.066+01:00  INFO 11236 --- [SpringMS] [main] c.j.SpringMS.SpringMsApplication         : Started SpringMsApplication in 10.462 seconds (process running for 11.13)
+2026-02-07T12:53:24.280+01:00 DEBUG 11236 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:53:24.319+01:00 DEBUG 11236 --- [SpringMS] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        dbuser
+        (password, role, username) 
+    values
+        (?, ?, ?)
+2026-02-07T12:55:20.424+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGMS with eureka with status DOWN
+2026-02-07T12:55:20.425+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770465320425, current=DOWN, previous=UP]
+2026-02-07T12:55:20.425+01:00  INFO 11236 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081: registering service...
+2026-02-07T12:55:20.435+01:00  INFO 11236 --- [SpringMS] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - registration status: 204
+2026-02-07T12:55:20.446+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-07T12:55:20.448+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-07T12:55:20.455+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-07T12:55:20.456+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-02-07T12:55:23.471+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-02-07T12:55:23.488+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGMS/salah:SpringMS:8081 - deregister  status: 200
+2026-02-07T12:55:23.494+01:00  INFO 11236 --- [SpringMS] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
