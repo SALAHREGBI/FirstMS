@@ -1,8 +1,12 @@
-com\jobintech\SpringMS\exception\PersonneNotFoundException.class
 com\jobintech\SpringMS\SpringMsApplication.class
-com\jobintech\SpringMS\handler\GlobalExceptionHandler.class
+com\jobintech\SpringMS\config\SecurityConfig.class
 com\jobintech\SpringMS\controller\PersonneController.class
-com\jobintech\SpringMS\services\PersonneService.class
-com\jobintech\SpringMS\model\Personne.class
+com\jobintech\SpringMS\services\CustomUserDetailsService.class
+com\jobintech\SpringMS\repositories\DBUserRepository.class
 com\jobintech\SpringMS\repositories\PersonneRepository.class
 com\jobintech\SpringMS\handler\ErrorResponse.class
+com\jobintech\SpringMS\exception\PersonneNotFoundException.class
+com\jobintech\SpringMS\model\DBUser.class
+com\jobintech\SpringMS\handler\GlobalExceptionHandler.class
+com\jobintech\SpringMS\services\PersonneService.class
+com\jobintech\SpringMS\model\Personne.class

@@ -2,7 +2,7 @@ package com.jobintech.SpringMS.handler;
 
 import com.jobintech.SpringMS.exception.PersonneNotFoundException;
 import jakarta.validation.ConstraintViolationException;
-import lombok.extern.slf4j.Slf4j; // 1. Zid had l-import
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
